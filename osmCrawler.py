@@ -57,7 +57,10 @@ def savePic(z, x, y, zR, xR, yR):
 	f.close()
 	print("d{}_x{}_y{}.png is downloaded".format(z - zR, x - xR, y - yR))
 
-if __name__=="__main__":
+
+# main function
+# get use of these functions to save the specific images
+def main():
 	zRoot = ZOOM
 	z = 12
 	while z <= 19:
@@ -73,3 +76,6 @@ if __name__=="__main__":
 		print("******* z = {} finished *******".format(z))
 		z += 1
 	print("======= all done =======")
+
+if __name__=="__main__":
+	main()
